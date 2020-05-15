@@ -1,0 +1,40 @@
+{
+  "name": "@amq/messaging",
+  "version": "0.0.1",
+  "description": "Message queue.",
+  "main": "lib/index.js",
+  "author": "AMQ",
+  "license": "MIT",
+  "private": true,
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --env=node --colors --coverage test",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\""
+  },
+  "keywords": [
+    "@amq/messaging",
+    "AMQ",
+    "Messaging"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@fluffy-spoon/substitute": "^1.107.0",
+    "@types/jest": "^24.0.24",
+    "@types/node": "^13.1.1",
+    "jest": "^24.9.0",
+    "prettier": "1.19.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "dependencies": {
+    "@google-cloud/pubsub": "^1.7.3"
+  }
+}

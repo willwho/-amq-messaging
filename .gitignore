@@ -1,0 +1,12 @@
+/node_modules
+/lib
+/coverage
+/temptemp
+yarn-error.log
+.vscode
+__tests__
+clipboard.txt
+jest.config.js
+Solution.code-workspace
+yarn.lock
+tsconfig.json
